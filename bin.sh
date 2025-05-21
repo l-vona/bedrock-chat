@@ -93,7 +93,8 @@ aws cloudformation deploy \
     BedrockRegion="$BEDROCK_REGION" \
     CdkJsonOverride="$CDK_JSON_OVERRIDE" \
     RepoUrl="$REPO_URL" \
-    Version="$VERSION"
+    Version="$VERSION" \
+  --tags "Owner=l.vona@reply.it"
 
 echo "Waiting for the stack creation to complete..."
 echo "NOTE: this stack contains CodeBuild project which will be used for cdk deploy."

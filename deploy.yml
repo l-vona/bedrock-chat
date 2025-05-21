@@ -170,8 +170,8 @@ Resources:
                   "cd cdk",
                   "cat cdk.json",
                   "npm ci",
-                  "npx cdk bootstrap",
-                  "npx cdk deploy --require-approval never --all"
+                  "npx cdk bootstrap --tags Owner=l.vona@reply.it",
+                  "npx cdk deploy --require-approval never --all --tags Owner=l.vona@reply.it"
                 ]
               }
             }
